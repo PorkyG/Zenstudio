@@ -21,10 +21,13 @@
         }
         .nav-wrapper {
             display: flex;
-            justify-content: right;
-            align-items: right;
+            justify-content: flex-end;
+            align-items: center;
             gap: 20px;
             padding: 41px 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         .nav-item {
             width: 158px;
@@ -32,43 +35,27 @@
             position: relative;
             text-align: center;
         }
-        .footer {
+        .header-container {
+            width: 100vw;
+            background: #5B30AF;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            margin-left: calc(-50vw + 50%);
+            margin-right: calc(-50vw + 50%);
+            height: 140.44px;
+        }
+        .header-content {
             width: 100%;
-            background: #91D6D6;
-            padding: 40px 0;
-            margin-top: 0;
-            position: relative;
-            bottom: 0;
-            left: 0;
-        }
-        .footer-content {
             max-width: 1440px;
-            margin: 0 auto;
-            padding: 0 20px;
             position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .footer-nav {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
+            padding: 0 20px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Header section -->
-        <div style="width: 100%; height: 140.44px; position: relative">
-            <div style="width: 100%; height: 140.44px; left: 0px; top: 0px; position: absolute; background: #5B30AF; outline: 3px #5B30AF solid"></div>
+    <div class="header-container">
+        <div class="header-content">
             <div style="width: 121px; height: 144px; left: 20px; top: -2px; position: absolute">
                 <img style="width: 121px; height: 144px; position: absolute; border-radius: 200px" src="./public/images/rectangle-2.png" alt="ZenStudio Logo" />
             </div>
@@ -96,3 +83,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Add your classes page content here -->
+
+</body>
+</html>
