@@ -1,70 +1,188 @@
-.text-style {
-    color: black;
-    font-size: 20px;
-    font-family: Inter;
-    font-weight: 500;
-    word-wrap: break-word;
-}
-
-/* Remove border-radius from images except for specific components */
-img[style*="border-radius"] {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.membership-section {
-    background: #91D6D6;
-    outline: 1px black solid;
-    position: relative;
-    padding: 40px 20px;
-}
-
-/* Add specific styles for trainer images */
-.trainer-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.membership-card {
-    font-family: Inter, sans-serif;
-    margin-bottom: 30px;
-}
-
-.membership-title {
-    font-size: 20px;
-    font-weight: 700;
-    color: black;
-    margin-bottom: 20px;
-}
-
-.membership-features {
-    font-size: 20px;
-    font-weight: 400;
-    color: black;
-    line-height: 1.5;
-}
-
-.join-button {
-    background: #5B30AF;
-    border-radius: 50px;
-    outline: 2px black solid;
-    padding: 10px 30px;
-    font-weight: 700;
-    font-size: 20px;
-    cursor: pointer;
-    text-align: center;
-    color: black;
-    display: inline-block;
-}
-
-.membership-image {
-    border-radius: 50%;
-    object-fit: cover;
-}
+// About Us
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 700;
+ word-wrap: break-word
+---
+// Our Services
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 700;
+ word-wrap: break-word
+---
+// Membership Plans
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 700;
+ word-wrap: break-word
+---
+// Contact Us
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 700;
+ word-wrap: break-word
+---
+// Country/Language
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 700;
+ word-wrap: break-word
+---
+// copyright|All rights reserved<br/>Privacy policy<br/>Terms & Conditions<br/>Google API Disclosure
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 400;
+ word-wrap: break-word
+---
+// Personalized Training Plans<br/>Work with expert trainers to create a plan tailored to your fitness level and goals.
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 500;
+ word-wrap: break-word
+---
+// Group Fitness Classes<br/>Stay motivated and inspired with a variety of classes led by top instructors.
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 500;
+ word-wrap: break-word
+---
+// Wellness Programs<br/>Enhance your overall well-being with yoga, mindfulness, and nutrition guidance
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 500;
+ word-wrap: break-word
+---
+// Zen Basic<br/><br/>Perfect for beginners<br/>$29<br/>/month
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 500;
+ word-wrap: break-word
+---
+// Access to basic equipment<br/>Group fitness classes<br/>Locker room access<br/>Fitness assessment
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 500;
+ word-wrap: break-word
+---
+// Get Started
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 500;
+ word-wrap: break-word
+---
+// Choose Plus
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 500;
+ word-wrap: break-word
+---
+// Zen Plus<br/><br/>Most popular choice<br/>$49<br/>/month
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 500;
+ word-wrap: break-word
+---
+// Zen Pro<br/><br/>Ultimate fitness experience<br/>$79<br/>/month
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 500;
+ word-wrap: break-word
+---
+// Everything in Plus<br/>Unlimited training sessions<br/>24/7 gym access<br/>Nutrition consultation
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 500;
+ word-wrap: break-word
+---
+// Go Pro
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 500;
+ word-wrap: break-word
+---
+// Everything in Basic<br/>One-on-one training sessions<br/>Exclusive workshops<br/>Priority booking
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 500;
+ word-wrap: break-word
+---
+// Transform Your Fitness Journey with ZenStudio Membership<br/>
+color: #FDFFFF;
+ font-size: 60px;
+ font-family: Inter;
+ font-weight: 700;
+ word-wrap: break-word
+---
+// <br/>
+color: #FDFFFF;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 500;
+ word-wrap: break-word
+---
+// Join ZenStudio today and unlock access to personalized training, dynamic group classes, and holistic wellness programs designed to help you achieve your health goals.
+color: white;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 500;
+ word-wrap: break-word
+---
+// Membership
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 700;
+ word-wrap: break-word
+---
+// Instructors
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 700;
+ word-wrap: break-word
+---
+// Classes
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 700;
+ word-wrap: break-word
+---
+// Join Today
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 700;
+ word-wrap: break-word
+---
+// Login
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 700;
+ word-wrap: break-word
+---
+// Logo
+color: black;
+ font-size: 20px;
+ font-family: Inter;
+ font-weight: 700;
+ word-wrap: break-word
