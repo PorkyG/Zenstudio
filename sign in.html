@@ -12,13 +12,6 @@
             flex-direction: column;
             align-items: center;
         }
-        .container {
-            width: 100%;
-            max-width: 1440px;
-            margin: 0 auto;
-            position: relative;
-            overflow: hidden;
-        }
         .nav-wrapper {
             display: flex;
             justify-content: flex-end;
@@ -34,36 +27,6 @@
             height: 62.55px;
             position: relative;
             text-align: center;
-        }
-        .footer {
-            width: 100%;
-            background: #91D6D6;
-            padding: 40px 0;
-            margin-top: 0;
-            position: relative;
-            bottom: 0;
-            left: 0;
-        }
-        .footer-content {
-            max-width: 1440px;
-            margin: 0 auto;
-            padding: 0 20px;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .footer-nav {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
         }
         .header-container {
             width: 100vw;
@@ -81,11 +44,40 @@
             position: relative;
             padding: 0 20px;
         }
-        .logo {
+        .landing-container {
+            width: 100vw;
+            height: 600px;
+            position: relative;
+            margin-left: calc(-50vw + 50%);
+            margin-right: calc(-50vw + 50%);
+            margin-top: -1px;
+            overflow: hidden;
+            background: #000;
+        }
+        .landing-content {
+            max-width: 1440px;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            position: relative;
+            padding: 0 20px;
+            z-index: 2;
+        }
+        .landing-background {
             position: absolute;
-            left: 20px;
-            top: -2px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             z-index: 1;
+            opacity: 0.9;
+        }
+        .sign-in-container {
+            width: 100vw;
+            position: relative;
+            background: #A7F4F4;
+            overflow: hidden;
+            padding: 60px 0;
+            min-height: 600px;
         }
     </style>
 </head>
@@ -132,63 +124,37 @@
         </div>
     </div>
 
-     <!-- Transform section -->
-     <div style="width: 100%; height: 516px; position: relative; background-image: url('./public/images/Transform.jpg'); background-size: cover; background-position: center;">
-        <div style="width: 1340px; left: 52px; top: 143px; position: absolute; text-align: center">
-            <span style="color: #FDFFFF; font-size: 60px; font-family: Inter; font-weight: 700; word-wrap: break-word">Transform Your Fitness Journey with ZenStudio Membership<br/></span>
-            <span style="color: #FDFFFF; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word"><br/></span>
-            <span style="color: white; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Join ZenStudio today and unlock access to personalized training, dynamic group classes, and holistic wellness programs designed to help you achieve your health goals.</span>
+    <div class="landing-container">
+        <img class="landing-background" src="./public/images/Connect.jpg" alt="Connect with ZenStudio" />
+        <div class="landing-content">
         </div>
     </div>
-    <!-- Pricing Section -->
-    <div style="width: 100%; min-height: 900px; position: relative; background: rgba(166.69, 243.94, 243.94, 0.25); margin-top: -1px;">
-        <div style="width: 283px; left: 73px; top: 134px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Personalized Training Plans<br/>Work with expert trainers to create a plan tailored to your fitness level and goals.</div>
-        <div style="width: 48px; height: 48px; left: 170px; top: 48px; position: absolute; overflow: hidden">
-            <img src="./public/images/Personalised.jpg" alt="Personalised Training" style="width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply" />
-        </div>
-        <div style="width: 216px; left: 617px; top: 134px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Group Fitness Classes<br/>Stay motivated and inspired with a variety of classes led by top instructors.</div>
-        <div style="width: 48px; height: 48px; left: 696px; top: 48px; position: absolute; overflow: hidden">
-            <img src="./public/images/Group.jpg" alt="Group Fitness" style="width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply" />
-        </div>
-        <div style="width: 212px; height: 115px; left: 1075px; top: 134px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Wellness Programs<br/>Enhance your overall well-being with yoga, mindfulness, and nutrition guidance</div>
-        <div style="width: 48px; height: 48px; left: 1132px; top: 48px; position: absolute; overflow: hidden">
-            <img src="./public/images/Wellness.jpg" alt="Wellness Programs" style="width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply" />
-        </div>
-        
-        <!-- Membership Plans -->
-        <div style="width: 444px; height: 448px; left: 19px; top: 291px; position: absolute; background: #91D6D6; overflow: hidden; border-radius: 10px; outline: 1px black solid; outline-offset: -1px">
-            <div style="width: 310px; height: 156px; left: 67px; top: 17px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Zen Basic<br/><br/>Perfect for beginners<br/>$29<br/>/month</div>
-            <div style="left: 67px; top: 205px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Access to basic equipment<br/>Group fitness classes<br/>Locker room access<br/>Fitness assessment</div>
-            <div style="width: 254px; height: 56px; left: 76px; top: 365px; position: absolute; background: white; overflow: hidden; border-radius: 10px; outline: 1px black solid; outline-offset: -1px">
-                <div style="left: 71px; top: 16px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Get Started</div>
-            </div>
-        </div>
 
-        <div style="width: 444px; height: 448px; left: 502px; top: 291px; position: absolute; background: #91D6D6; overflow: hidden; border-radius: 10px; outline: 1px black solid; outline-offset: -1px">
-            <div style="left: 105px; top: 21px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Zen Plus<br/><br/>Most popular choice<br/>$49<br/>/month</div>
-            <div style="left: 583px; top: 496px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Everything in Basic<br/>One-on-one training sessions<br/>Exclusive workshops<br/>Priority booking</div>
-            <div style="width: 254px; height: 56px; left: 95px; top: 357px; position: absolute; background: white; overflow: hidden; border-radius: 10px; outline: 1px black solid; outline-offset: -1px">
-                <div style="left: 67px; top: 16px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Choose Plus</div>
-            </div>
-        </div>
-
-        <div style="width: 444px; height: 448px; left: 985px; top: 291px; position: absolute; background: #91D6D6; overflow: hidden; border-radius: 10px; outline: 1px black solid; outline-offset: -1px">
-            <div style="left: 91px; top: 17px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Zen Pro<br/><br/>Ultimate fitness experience<br/>$79<br/>/month</div>
-            <div style="left: 78px; top: 195px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Everything in Plus<br/>Unlimited training sessions<br/>24/7 gym access<br/>Nutrition consultation</div>
-            <div style="width: 254px; height: 56px; left: 91px; top: 349px; position: absolute; background: white; overflow: hidden; border-radius: 10px; outline: 1px black solid; outline-offset: -1px">
-                <div style="left: 82px; top: 16px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Go Pro</div>
+    <div class="sign-in-container">
+        <div style="max-width: 1440px; width: 100%; margin: 0 auto; position: relative; height: 500px;">
+            <div style="width: 588px; height: 475px; left: 50%; transform: translateX(-50%); position: absolute; background: #91D6D6; overflow: hidden; outline: 1px #5B30AF solid; outline-offset: -1px">
+                <div data-size="48" style="width: 48px; height: 48px; left: 32px; top: 32px; position: absolute; overflow: hidden">
+                    <img src="./public/images/User.jpg" alt="User Icon" style="width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply" />
+                </div>
+                <div style="left: 102px; top: 44px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">Log Into Your Account</div>
+                <div style="width: 434px; left: 32px; top: 96px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Welcome back to your wellness journey.</div>
+                
+                <div style="left: 30px; top: 208px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Email Address</div>
+                <input type="email" style="width: 510px; height: 50px; left: 38px; top: 248px; position: absolute; background: white; border-radius: 10px; border: none; padding: 0 15px;" />
+                
+                <div style="left: 25px; top: 326px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Password</div>
+                <input type="password" style="width: 510px; height: 50px; left: 40px; top: 366px; position: absolute; background: white; border-radius: 10px; border: none; padding: 0 15px;" />
             </div>
         </div>
     </div>
-    
-    <!-- Add before closing body tag -->
+
     <div style="width: 100%; height: 430px; position: relative;">
         <!-- Footer Background -->
         <div style="width: 100%; height: 100%; background: #91D6D6"></div>
         
         <!-- Navigation Links -->
         <div style="width: 91px; height: 23.59px; left: 375px; top: 32.59px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
-            <a href="./contact/FAQ.html" style="text-decoration: none; color: black;">About Us</a>
+            <a href="./classes.html#wellness" style="text-decoration: none; color: black;">About Us</a>
         </div>
         <div style="width: 127px; height: 23.59px; left: 531px; top: 32.59px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
             <a href="./classes.html" style="text-decoration: none; color: black;">Our Services</a>
@@ -229,4 +195,3 @@
     </div>
 </body>
 </html>
-
