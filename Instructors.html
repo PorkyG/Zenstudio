@@ -71,6 +71,39 @@
             z-index: 1;
             opacity: 0.9;
         }
+        .nav-item a:hover div:first-child {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #91D6D6;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 20px;
+            color: black;
+            text-decoration: none;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .dropdown-menu a:hover {
+            background: #5B30AF;
+            color: white;
+        }
+
+        .nav-item:hover .dropdown-menu {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -88,18 +121,33 @@
                         <div style="width: 100%; height: 100%; background: #91D6D6; border-radius: 50px; outline: 2px black solid"></div>
                         <div style="position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 20px; font-family: Inter; font-weight: 700;">Membership</div>
                     </a>
+                    <div class="dropdown-menu">
+                        <a href="./membership.html#basic">Zen Basic</a>
+                        <a href="./membership.html#plus">Zen Plus</a>
+                        <a href="./membership.html#pro">Zen Pro</a>
+                    </div>
                 </div>
                 <div class="nav-item">
                     <a href="./instructors.html" style="text-decoration: none;">
                         <div style="width: 100%; height: 100%; background: #91D6D6; border-radius: 50px; outline: 2px black solid"></div>
                         <div style="position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 20px; font-family: Inter; font-weight: 700;">Instructors</div>
                     </a>
+                    <div class="dropdown-menu">
+                        <a href="./instructors.html#alex">Alex Ward</a>
+                        <a href="./instructors.html#amber">Amber Mcgoogan</a>
+                        <a href="./instructors.html#cheryl">Cheryl Heard</a>
+                    </div>
                 </div>
                 <div class="nav-item">
                     <a href="./classes.html" style="text-decoration: none;">
                         <div style="width: 100%; height: 100%; background: #91D6D6; border-radius: 50px; outline: 2px black solid"></div>
                         <div style="position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 20px; font-family: Inter; font-weight: 700;">Classes</div>
                     </a>
+                    <div class="dropdown-menu">
+                        <a href="./classes.html#yoga">Yoga</a>
+                        <a href="./classes.html#pilates">Pilates</a>
+                        <a href="./classes.html#high-intensity">High Intensity</a>
+                    </div>
                 </div>
                 <div class="nav-item">
                     <a href="./sign up.html" style="text-decoration: none;">
@@ -155,10 +203,10 @@
             <div style="left: 0px; top: 0px; position: absolute; color: black; font-size: 40px; font-family: Inter; font-weight: 800; word-wrap: break-word">Our Community in Action</div>
             
             <!-- First Row -->
-            <img style="width: 210px; height: 202px; left: 3px; top: 132px; position: absolute; border-radius: 150px; border: 1px black solid" src="./public/images/Trainer1.jpg" />
-            <img style="width: 210px; height: 202px; left: 362px; top: 132px; position: absolute; border-radius: 150px; border: 1px black solid" src="./public/images/Trainer2.jpg" />
-            <img style="width: 210px; height: 202px; left: 721px; top: 132px; position: absolute; border-radius: 150px; border: 1px black solid" src="./public/images/Trainer3.jpg" />
-            <img style="width: 210px; height: 202px; left: 1080px; top: 132px; position: absolute; border-radius: 150px; border: 1px black solid" src="./public/images/Trainer4.jpg" />
+            <img style="width: 210px; height: 202px; left: 3px; top: 132px; position: absolute; border-radius: 150px; border: 1px black solid" src="./public/images/Trainer1.jpg" alt="Trainer 1" />
+            <img style="width: 210px; height: 202px; left: 362px; top: 132px; position: absolute; border-radius: 150px; border: 1px black solid" src="./public/images/Trainer2.jpg" alt="Trainer 2" />
+            <img style="width: 210px; height: 202px; left: 721px; top: 132px; position: absolute; border-radius: 150px; border: 1px black solid" src="./public/images/Trainer3.jpg" alt="Trainer 3" />
+            <img style="width: 210px; height: 202px; left: 1080px; top: 132px; position: absolute; border-radius: 150px; border: 1px black solid" src="./public/images/Trainer4.jpg" alt="Trainer 4" />
             
             <!-- Second Row -->
             <img style="width: 210px; height: 202px; left: 3px; top: 484px; position: absolute; border-radius: 150px; border: 1px black solid" src="./public/images/Trainer5.jpg" />

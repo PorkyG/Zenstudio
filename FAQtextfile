@@ -1,0 +1,285 @@
+<!DOCTYPE >
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .nav-wrapper {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+            padding: 41px 20px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .nav-item {
+            width: 158px;
+            height: 62.55px;
+            position: relative;
+            text-align: center;
+        }
+        .header-container {
+            width: 100vw;
+            background: #5B30AF;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            margin-left: calc(-50vw + 50%);
+            margin-right: calc(-50vw + 50%);
+            height: 140.44px;
+        }
+        .header-content {
+            width: 100%;
+            max-width: 1440px;
+            position: relative;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <div class="header-content">
+            <div style="width: 121px; height: 144px; left: 20px; top: -2px; position: absolute">
+                <a href="../index.html" style="text-decoration: none;">
+                    <img style="width: 121px; height: 144px; position: absolute; border-radius: 200px" src="../public/images/rectangle-2.png" alt="ZenStudio Logo" />
+                </a>
+            </div>
+            <div class="nav-wrapper">
+                <div class="nav-item">
+                    <a href="../membership.html" style="text-decoration: none;">
+                        <div style="width: 100%; height: 100%; background: #91D6D6; border-radius: 50px; outline: 2px black solid"></div>
+                        <div style="position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 20px; font-family: Inter; font-weight: 700;">Membership</div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="../instructors.html" style="text-decoration: none;">
+                        <div style="width: 100%; height: 100%; background: #91D6D6; border-radius: 50px; outline: 2px black solid"></div>
+                        <div style="position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 20px; font-family: Inter; font-weight: 700;">Instructors</div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="../classes.html" style="text-decoration: none;">
+                        <div style="width: 100%; height: 100%; background: #91D6D6; border-radius: 50px; outline: 2px black solid"></div>
+                        <div style="position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 20px; font-family: Inter; font-weight: 700;">Classes</div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="../sign up.html" style="text-decoration: none;">
+                        <div style="width: 100%; height: 100%; background: white; border-radius: 50px; outline: 2px black solid"></div>
+                        <div style="position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 20px; font-family: Inter; font-weight: 700;">Join Today</div>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="../sign in.html" style="text-decoration: none;">
+                        <div style="width: 100%; height: 100%; background: #91D6D6; border-radius: 50px; outline: 2px black solid"></div>
+                        <div style="position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 20px; font-family: Inter; font-weight: 700;">Login</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 100vw; position: relative; background: rgba(144.93, 214.19, 214.19, 0.53); overflow: hidden; padding: 40px 0;">
+        <div style="max-width: 1440px; width: 100%; margin: 0 auto; position: relative; min-height: 850px;">
+            <!-- Top Section -->
+            <div style="width: 751px; left: 24px; top: 38px; position: absolute">
+                <div style="color: #5B30AF; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">Transforming Lives Through Fitness<br/><br/></div>
+                <div style="color: black; font-size: 80px; font-family: Inter; font-weight: 700; word-wrap: break-word">About ZenStudio<br/></div>
+                <div style="color: black; font-size: 60px; font-family: Inter; font-weight: 700; word-wrap: break-word"><br/></div>
+                <div style="color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">At ZenStudio, we believe in empowering individuals to achieve their best selves through personalized fitness and wellness solutions. Discover our story and the values that drive us.</div>
+            </div>
+
+            <!-- Mission Section -->
+            <div style="width: 689px; left: 18px; top: 408px; position: absolute">
+                <div style="color: #5B30AF; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">Empowering Wellness, Inspiring Change<br/></div>
+                <div style="color: black; font-size: 60px; font-family: Inter; font-weight: 700; word-wrap: break-word">Our Mission and Vision<br/></div>
+                <div style="color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">ZenStudio is dedicated to creating a space where fitness meets mindfulness. Our mission is to inspire healthier lifestyles and foster a supportive community.</div>
+            </div>
+
+            <div style="width: 603px; left: 804px; top: 657px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">We envision a world where everyone can achieve their wellness goals with personalized training, group classes, and holistic programs tailored to their needs.</div>
+
+            <div style="left: 18px; top: 780px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">Join us as we continue to innovate and redefine what a fitness studio can be.</div>
+
+            <img style="width: 562px; height: 592px; left: 817px; top: 36px; position: absolute; border-radius: 10px;" src="../public/images/Mission.jpg" alt="ZenStudio Mission" />
+        </div>
+    </div>
+
+    <div style="width: 100vw; position: relative; background: #A7F4F4; overflow: hidden; padding: 40px 0 0 0;">
+        <div style="max-width: 1440px; width: 100%; margin: 0 auto; position: relative; min-height: 800px; padding: 0;">
+            <div style="left: 43px; top: 42px; position: absolute; color: black; font-size: 60px; font-family: Inter; font-weight: 700; word-wrap: break-word">Our Journey</div>
+            <div style="width: 384px; left: 983px; top: 64px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">From humble beginnings to becoming a trusted fitness studio, explore the milestones that define ZenStudio.</div>
+            
+            <div style="width: 1286px; height: 390px; left: 69px; top: 174px; position: absolute; background: #91D6D6; overflow: hidden; border-radius: 10px; outline: 1px #5B30AF solid; outline-offset: -1px">
+                <!-- Inception Column -->
+                <div style="width: 93px; height: 23px; left: 58px; top: 44px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">Inception</div>
+                <div style="width: 342px; height: 56px; left: 24px; top: 126px; position: absolute; background: #A7F4F4; overflow: hidden; border-radius: 5px; outline: 1px #5B30AF solid; outline-offset: -1px">
+                    <div style="left: 9px; top: 16px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Idea and Concept Development</div>
+                </div>
+                <div style="width: 342px; height: 56px; left: 24px; top: 195px; position: absolute; background: #A7F4F4; overflow: hidden; border-radius: 5px; outline: 1px #5B30AF solid; outline-offset: -1px">
+                    <div style="left: 0px; top: 16px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Opening Our First Studio</div>
+                </div>
+                <div style="width: 342px; height: 56px; left: 24px; top: 264px; position: absolute; background: #A7F4F4; overflow: hidden; border-radius: 5px; outline: 1px #5B30AF solid; outline-offset: -1px">
+                    <div style="left: 3px; top: 16px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Building a Dedicated Community</div>
+                </div>
+
+                <!-- Growth Column -->
+                <div style="left: 606px; top: 48px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">Growth</div>
+                <div style="width: 342px; height: 56px; left: 476px; top: 126px; position: absolute; background: #A7F4F4; overflow: hidden; border-radius: 5px; outline: 1px #5B30AF solid; outline-offset: -1px">
+                    <div style="left: 12px; top: 16px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Launching Group Classes</div>
+                </div>
+                <div style="width: 342px; height: 56px; left: 476px; top: 195px; position: absolute; background: #A7F4F4; overflow: hidden; border-radius: 5px; outline: 1px #5B30AF solid; outline-offset: -1px">
+                    <div style="left: 14px; top: 16px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Expanding Wellness Programs</div>
+                </div>
+                <div style="width: 342px; height: 56px; left: 476px; top: 264px; position: absolute; background: #A7F4F4; overflow: hidden; border-radius: 5px; outline: 1px #5B30AF solid; outline-offset: -1px">
+                    <div style="left: 13px; top: 16px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Opening New Locations</div>
+                </div>
+
+                <!-- Innovation Column -->
+                <div style="left: 1112px; top: 43px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">Innovation</div>
+                <div style="width: 342px; height: 56px; left: 928px; top: 126px; position: absolute; background: #A7F4F4; overflow: hidden; border-radius: 5px; outline: 1px #5B30AF solid; outline-offset: -1px">
+                    <div style="left: 12px; top: 16px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Introducing Personalized Training</div>
+                </div>
+                <div style="width: 342px; height: 56px; left: 928px; top: 195px; position: absolute; background: #A7F4F4; overflow: hidden; border-radius: 5px; outline: 1px #5B30AF solid; outline-offset: -1px">
+                    <div style="left: 16px; top: 16px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Integrating Digital Fitness Tools</div>
+                </div>
+                <div style="width: 342px; height: 56px; left: 928px; top: 264px; position: absolute; background: #A7F4F4; overflow: hidden; border-radius: 5px; outline: 1px #5B30AF solid; outline-offset: -1px">
+                    <div style="left: 12px; top: 16px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Hosting Wellness Retreats</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 100vw; position: relative; background: white; overflow: hidden; padding: 40px 0 0 0;">
+        <div style="max-width: 1440px; width: 100%; margin: 0 auto; position: relative; min-height: 700px; padding: 0;">
+            <!-- Title and Description -->
+            <div style="width: 618px; left: 12px; top: 6px; position: absolute">
+                <span style="color: #5B30AF; font-size: 30px; font-family: Inter; font-weight: 700; word-wrap: break-word">Our Achievements<br/></span>
+                <span style="color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word"><br/></span>
+                <span style="color: black; font-size: 70px; font-family: Inter; font-weight: 700; word-wrap: break-word">Driven by Passion, Fueled by Results<br/></span>
+                <span style="color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word"><br/></span>
+                <span style="color: black; font-size: 30px; font-family: Inter; font-weight: 500; word-wrap: break-word"><br/>ZenStudio has been recognized for our dedication to fitness and wellness, earning accolades and trust from our community.</span>
+            </div>
+
+            <!-- Metrics -->
+            <div style="display: flex; gap: 10px; position: absolute; top: 510px;">
+                <div style="width: 131px; color: black; font-size: 30px; font-family: Inter; font-weight: 700; word-wrap: break-word; text-align: right;">
+                    5,000+<br/>2,500+<br/>50+<br/>8+
+                </div>
+                <div style="width: 287px; color: #5B30AF; font-size: 30px; font-family: Inter; font-weight: 500; word-wrap: break-word; outline: 1px #5B30AF solid; outline-offset: -1px; padding: 10px;">
+                    Classes Conducted<br/>Members Served<br/>Expert Trainers<br/>Years of Excellence
+                </div>
+            </div>
+
+            <!-- Achievement Image -->
+            <img style="width: 691px; height: 670px; left: 697px; top: 0px; position: absolute; border-radius: 10px" src="../public/images/Achievments.jpg" alt="ZenStudio Achievements" />
+        </div>
+    </div>
+
+    <div style="width: 100vw; position: relative; background: rgba(144.93, 214.19, 214.19, 0.48); overflow: hidden; padding: 40px 0;">
+        <div style="max-width: 1440px; width: 100%; margin: 0 auto; position: relative; min-height: 600px;">
+            <img style="width: 674px; height: 500px; left: 25px; top: 28px; position: absolute; border-radius: 10px" src="../public/images/Why Choose.jpg" />
+            <div style="width: 696px; height: 500px; left: 720px; top: 32px; position: absolute">
+                <span style="color: #5B30AF; font-size: 30px; font-family: Inter; font-weight: 700; word-wrap: break-word">Your Fitness Journey Starts Here<br/></span>
+                <span style="color: black; font-size: 30px; font-family: Inter; font-weight: 500; word-wrap: break-word"><br/></span>
+                <span style="color: black; font-size: 60px; font-family: Inter; font-weight: 700; word-wrap: break-word">Why Choose ZenStudio<br/></span>
+                <span style="color: black; font-size: 30px; font-family: Inter; font-weight: 500; word-wrap: break-word"><br/>ZenStudio offers the perfect blend of personalized training, group classes, and wellness programs to help you achieve your goals.</span>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 100vw; position: relative; background: #A7F4F4; overflow: hidden; padding: 40px 0;">
+        <div style="max-width: 1440px; width: 100%; margin: 0 auto; position: relative; min-height: 700px;">
+            <!-- FAQ Header -->
+            <div style="width: 954px; height: 146px; left: 191px; top: 68px; position: absolute; text-align: center">
+                <span style="color: black; font-size: 50px; font-family: Inter; font-weight: 500; word-wrap: break-word">Frequently Asked Questions<br/></span>
+                <span style="color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word"><br/></span>
+                <span style="color: black; font-size: 30px; font-family: Inter; font-weight: 500; word-wrap: break-word">Find answers to commonly asked questions about ZenStudio's services, memberships, and policies.</span>
+            </div>
+
+            <!-- FAQ Questions -->
+            <div style="width: 1354px; height: 66px; left: 39px; top: 260px; position: absolute; overflow: hidden; outline: 1px #5B30AF solid; outline-offset: -1px">
+                <div style="left: 20px; top: 21px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">What are your gym operating hours?</div>
+                <div style="width: 665px; left: 673px; top: 14px; position: absolute; text-align: right; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Our facility is open 24/7 for members. Staff are available from 6am to 10pm on weekdays, and 8am to 8pm on weekends.</div>
+            </div>
+
+            <div style="width: 1354px; height: 66px; left: 39px; top: 346px; position: absolute; overflow: hidden; outline: 1px #5B30AF solid; outline-offset: -1px">
+                <div style="width: 412px; height: 23px; left: 21px; top: 14px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">How do I cancel or freeze my membership?</div>
+                <div style="width: 762px; left: 580px; top: 9px; position: absolute; text-align: right; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">You can cancel or freeze your membership by visiting our front desk or through your online member portal. We require a 30-day notice for cancellations.</div>
+            </div>
+
+            <div style="width: 1354px; height: 66px; left: 39px; top: 432px; position: absolute; overflow: hidden; outline: 1px #5B30AF solid; outline-offset: -1px">
+                <div style="left: 20px; top: 21px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Do you offer personal training sessions?</div>
+                <div style="width: 661px; left: 688px; top: 9px; position: absolute; text-align: right; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Yes, we offer one-on-one personal training with certified trainers. You can book sessions through our website or at the front desk.</div>
+            </div>
+
+            <div style="width: 1354px; height: 66px; left: 39px; top: 518px; position: absolute; overflow: hidden; outline: 1px #5B30AF solid; outline-offset: -1px">
+                <div style="left: 20px; top: 21px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">What classes are included in the membership?</div>
+                <div style="width: 768px; left: 581px; top: 9px; position: absolute; text-align: right; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">All standard memberships include access to our group fitness classes including yoga, HIIT, spinning, and more. Premium classes may require additional fees.</div>
+            </div>
+
+            <div style="width: 1354px; height: 66px; left: 39px; top: 604px; position: absolute; overflow: hidden; outline: 1px #5B30AF solid; outline-offset: -1px">
+                <div style="left: 26px; top: 21px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Is there free parking available?</div>
+                <div style="width: 660px; left: 689px; top: 9px; position: absolute; text-align: right; color: black; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word">Yes, we provide free parking for all members in our dedicated parking facility during your workout sessions.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add footer section -->
+    <div style="width: 100%; height: 430px; position: relative;">
+        <!-- Footer Background -->
+        <div style="width: 100%; height: 100%; background: #91D6D6"></div>
+        
+        <!-- Navigation Links -->
+        <div style="width: 91px; height: 23.59px; left: 375px; top: 32.59px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
+            <a href="../classes.html#wellness" style="text-decoration: none; color: black;">About Us</a>
+        </div>
+        <div style="width: 127px; height: 23.59px; left: 531px; top: 32.59px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
+            <a href="../classes.html" style="text-decoration: none; color: black;">Our Services</a>
+        </div>
+        <div style="width: 182px; height: 23.59px; left: 723px; top: 32.59px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
+            <a href="../membership.html" style="text-decoration: none; color: black;">Membership Plans</a>
+        </div>
+        <div style="width: 110px; height: 23.59px; left: 970px; top: 32.59px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
+            <a href="../index.html#groups" style="text-decoration: none; color: black;">Contact Us</a>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div data-size="48" style="width: 48px; height: 48px; left: 1122px; top: 341px; position: absolute; overflow: hidden">
+            <img src="../public/images/Facebook.jpg" alt="Facebook" style="width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply" />
+        </div>
+        <div data-size="48" style="width: 48px; height: 48px; left: 1182px; top: 341px; position: absolute; overflow: hidden">
+            <img src="../public/images/X.jpg" alt="X" style="width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply" />
+        </div>
+        <div data-size="48" style="width: 48px; height: 48px; left: 1242px; top: 341px; position: absolute; overflow: hidden">
+            <img src="../public/images/Instagram.jpg" alt="Instagram" style="width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply" />
+        </div>
+        <div data-size="48" style="width: 48px; height: 48px; left: 1302px; top: 341px; position: absolute; overflow: hidden">
+            <img src="../public/images/Youtube.jpg" alt="Youtube" style="width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply" />
+        </div>
+        <div data-size="48" style="width: 48px; height: 48px; left: 1362px; top: 341px; position: absolute; overflow: hidden">
+            <img src="../public/images/Linkedin.jpg" alt="LinkedIn" style="width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply" />
+        </div>
+
+        <!-- Country/Language Section -->
+        <div style="width: 314px; height: 206px; left: 4px; top: 224.29px; position: absolute; background: #91D6D6; border-radius: 10px"></div>
+        <div style="width: 184px; height: 16.26px; left: 34px; top: 244.61px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">Country/Language</div>
+        <div style="width: 268px; height: 146.37px; left: 36px; top: 269.01px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">copyright|All rights reserved<br/>Privacy policy<br/>Terms & Conditions<br/>Google API Disclosure</div>
+
+        <!-- Footer Logo -->
+        <a href="../index.html" style="text-decoration: none;">
+            <img style="width: 238px; height: 210px; left: 561px; top: 161px; position: absolute; border-radius: 150px; border: 2px black solid" src="../public/images/Logo.jpg" alt="ZenStudio Footer Logo" />
+        </a>
+    </div>
+</body>
+</html>
+

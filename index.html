@@ -30,10 +30,36 @@
             margin: 0 auto;
         }
         .nav-item {
+            position: relative; /* Adjusted for dropdown positioning */
             width: 158px;
             height: 62.55px;
-            position: relative;
             text-align: center;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #91D6D6;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            font-family: Inter;
+            font-weight: 600;
+        }
+        .dropdown-menu a:hover {
+            background: #5B30AF;
+            color: white;
+        }
+        .nav-item:hover .dropdown-menu {
+            display: block;
         }
         .footer {
             width: 100%;
@@ -86,6 +112,10 @@
             left: 20px;
             top: -2px;
             z-index: 1;
+        }
+        .logo img:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
         }
         .landing-container {
             width: 100vw;
@@ -149,12 +179,23 @@
             height: 100%;
             padding: 0 20px;
         }
+        .footer div:hover .dropdown-menu {
+            display: block;
+        }
+        .nav-item a:hover div:first-child {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .footer-logo img:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
     </style>
 </head>
 <body>
     <div class="header-container">
         <div class="header-content">
-            <div style="width: 121px; height: 144px; left: 20px; top: -2px; position: absolute">
+            <div class="logo" style="width: 121px; height: 144px; left: 20px; top: -2px; position: absolute">
                 <a href="./index.html" style="text-decoration: none;">
                     <img style="width: 121px; height: 144px; position: absolute; border-radius: 200px" src="./public/images/rectangle-2.png" alt="ZenStudio Logo" />
                 </a>
@@ -165,18 +206,33 @@
                         <div style="width: 100%; height: 100%; background: #91D6D6; border-radius: 50px; outline: 2px black solid"></div>
                         <div style="position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 20px; font-family: Inter; font-weight: 700;">Membership</div>
                     </a>
+                    <div class="dropdown-menu">
+                        <a href="./membership.html#basic">Zen Basic</a>
+                        <a href="./membership.html#plus">Zen Plus</a>
+                        <a href="./membership.html#pro">Zen Pro</a>
+                    </div>
                 </div>
                 <div class="nav-item">
-                    <a href="./Instructors.html" style="text-decoration: none;">
+                    <a href="./instructors.html" style="text-decoration: none;">
                         <div style="width: 100%; height: 100%; background: #91D6D6; border-radius: 50px; outline: 2px black solid"></div>
                         <div style="position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 20px; font-family: Inter; font-weight: 700;">Instructors</div>
                     </a>
+                    <div class="dropdown-menu">
+                        <a href="./instructors.html#alex">Alex Ward</a>
+                        <a href="./instructors.html#amber">Amber Mcgoogan</a>
+                        <a href="./instructors.html#cheryl">Cheryl Heard</a>
+                    </div>
                 </div>
                 <div class="nav-item">
                     <a href="./classes.html" style="text-decoration: none;">
                         <div style="width: 100%; height: 100%; background: #91D6D6; border-radius: 50px; outline: 2px black solid"></div>
                         <div style="position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 20px; font-family: Inter; font-weight: 700;">Classes</div>
                     </a>
+                    <div class="dropdown-menu">
+                        <a href="./classes.html#yoga">Yoga</a>
+                        <a href="./classes.html#pilates">Pilates</a>
+                        <a href="./classes.html#high-intensity">High Intensity</a>
+                    </div>
                 </div>
                 <div class="nav-item">
                     <a href="./sign up.html" style="text-decoration: none;">
@@ -520,6 +576,11 @@
         <!-- Navigation Links -->
         <div style="width: 91px; height: 23.59px; left: 375px; top: 32.59px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
             <a href="./contact/FAQ.html" style="text-decoration: none; color: black;">About Us</a>
+            <div class="dropdown-menu">
+                <a href="./instructors.html">Meet Our Trainers</a>
+                <a href="./index.html#groups">Studio Locations</a>
+                <a href="./classes.html#wellness">Wellness Programs</a>
+            </div>
         </div>
         <div style="width: 127px; height: 23.59px; left: 531px; top: 32.59px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
             <a href="./classes.html" style="text-decoration: none; color: black;">Our Services</a>
@@ -554,7 +615,7 @@
         <div style="width: 268px; height: 146.37px; left: 36px; top: 269.01px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">copyright|All rights reserved<br/>Privacy policy<br/>Terms & Conditions<br/>Google API Disclosure</div>
 
         <!-- Footer Logo -->
-        <a href="./index.html" style="text-decoration: none;">
+        <a href="./index.html" style="text-decoration: none;" class="footer-logo">
             <img style="width: 238px; height: 210px; left: 561px; top: 161px; position: absolute; border-radius: 150px; border: 2px black solid" src="./public/images/Logo.jpg" alt="ZenStudio Footer Logo" />
         </a>
     </div>
