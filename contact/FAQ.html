@@ -82,6 +82,65 @@
             transform: scale(1.1);
             transition: transform 0.3s ease-in-out;
         }
+        .footer-logo img:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .social-icons img {
+            mix-blend-mode: multiply;
+            transition: transform 0.3s ease-in-out, mix-blend-mode 0.3s ease-in-out;
+        }
+        .social-icons img:hover {
+            transform: scale(1.1);
+            mix-blend-mode: screen;
+        }
+        .logo img:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .nav-item div:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .nav-item div:first-child:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .membership-section a div:first-child:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .footer {
+            width: 100%;
+            background: #91D6D6;
+            padding: 40px 0;
+            margin-top: 0;
+            position: relative;
+            bottom: 0;
+            left: 0;
+        }
+        .footer-content {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .social-icons {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
     </style>
 </head>
 <body>
@@ -287,40 +346,43 @@
         </div>
     </div>
 
-    <!-- Add footer section -->
+    <div style="width: 100%; height: 430px; position: relative;">
+       <!-- Add before closing body tag -->
     <div style="width: 100%; height: 430px; position: relative;">
         <!-- Footer Background -->
         <div style="width: 100%; height: 100%; background: #91D6D6"></div>
         
         <!-- Navigation Links -->
         <div style="width: 91px; height: 23.59px; left: 375px; top: 32.59px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
-            <a href="../classes.html#wellness" style="text-decoration: none; color: black;">About Us</a>
+            <a href="./contact/FAQ.html" style="text-decoration: none; color: black;">About Us</a>
         </div>
         <div style="width: 127px; height: 23.59px; left: 531px; top: 32.59px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
-            <a href="../classes.html" style="text-decoration: none; color: black;">Our Services</a>
+            <a href="./classes.html" style="text-decoration: none; color: black;">Our Services</a>
         </div>
         <div style="width: 182px; height: 23.59px; left: 723px; top: 32.59px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
-            <a href="../membership.html" style="text-decoration: none; color: black;">Membership Plans</a>
+            <a href="./membership.html" style="text-decoration: none; color: black;">Membership Plans</a>
         </div>
         <div style="width: 110px; height: 23.59px; left: 970px; top: 32.59px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 700; word-wrap: break-word">
-            <a href="../index.html#groups" style="text-decoration: none; color: black;">Contact Us</a>
+            <a href="./index.html#groups" style="text-decoration: none; color: black;">Contact Us</a>
         </div>
 
         <!-- Social Media Icons -->
-        <div data-size="48" style="width: 48px; height: 48px; left: 1122px; top: 341px; position: absolute; overflow: hidden">
-            <img src="../public/images/Facebook.jpg" alt="Facebook" style="width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply" />
-        </div>
-        <div data-size="48" style="width: 48px; height: 48px; left: 1182px; top: 341px; position: absolute; overflow: hidden">
-            <img src="../public/images/X.jpg" alt="X" style="width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply" />
-        </div>
-        <div data-size="48" style="width: 48px; height: 48px; left: 1242px; top: 341px; position: absolute; overflow: hidden">
-            <img src="../public/images/Instagram.jpg" alt="Instagram" style="width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply" />
-        </div>
-        <div data-size="48" style="width: 48px; height: 48px; left: 1302px; top: 341px; position: absolute; overflow: hidden">
-            <img src="../public/images/Youtube.jpg" alt="Youtube" style="width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply" />
-        </div>
-        <div data-size="48" style="width: 48px; height: 48px; left: 1362px; top: 341px; position: absolute; overflow: hidden">
-            <img src="../public/images/Linkedin.jpg" alt="LinkedIn" style="width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply" />
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="./public/images/Facebook.jpg" alt="Facebook" style="width: 48px; height: 48px; object-fit: contain;" />
+            </a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                <img src="./public/images/X.jpg" alt="Twitter" style="width: 48px; height: 48px; object-fit: contain;" />
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="./public/images/Instagram.jpg" alt="Instagram" style="width: 48px; height: 48px; object-fit: contain;" />
+            </a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                <img src="./public/images/Youtube.jpg" alt="YouTube" style="width: 48px; height: 48px; object-fit: contain;" />
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                <img src="./public/images/Linkedin.jpg" alt="LinkedIn" style="width: 48px; height: 48px; object-fit: contain;" />
+            </a>
         </div>
 
         <!-- Country/Language Section -->
@@ -329,10 +391,9 @@
         <div style="width: 268px; height: 146.37px; left: 36px; top: 269.01px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">copyright|All rights reserved<br/>Privacy policy<br/>Terms & Conditions<br/>Google API Disclosure</div>
 
         <!-- Footer Logo -->
-        <a href="../index.html" style="text-decoration: none;">
-            <img style="width: 238px; height: 210px; left: 561px; top: 161px; position: absolute; border-radius: 150px; border: 2px black solid" src="../public/images/Logo.jpg" alt="ZenStudio Footer Logo" />
+        <a href="./index.html" style="text-decoration: none;" class="footer-logo">
+            <img style="width: 238px; height: 210px; left: 561px; top: 161px; position: absolute; border-radius: 150px; border: 2px black solid" src="./public/images/Logo.jpg" alt="ZenStudio Footer Logo" />
         </a>
     </div>
 </body>
 </html>
-
