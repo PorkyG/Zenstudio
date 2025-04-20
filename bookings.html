@@ -195,7 +195,6 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
     <div class="header-container">
         <div class="header-content">
             <div class="logo">
@@ -251,6 +250,44 @@
     <!-- Booking Form Section -->
     <div class="booking-container">
         <h1>Book Your Class</h1>
+        
+        <!-- Filter Section -->
+        <div style="margin-bottom: 20px; padding: 20px; background: #f1f1f1; border-radius: 10px;">
+            <h2 style="color: #5B30AF; font-family: Inter, sans-serif; font-size: 24px; font-weight: 700;">Filter Classes</h2>
+            <form style="display: flex; flex-wrap: wrap; gap: 20px;">
+                <div style="flex: 1; min-width: 200px;">
+                    <label for="filter-class-type" style="font-size: 18px; font-family: Inter, sans-serif; font-weight: 600; color: #333;">Class Type</label>
+                    <select id="filter-class-type" name="filter-class-type" style="width: 100%; padding: 10px; font-size: 16px; font-family: Inter, sans-serif; border: 1px solid #ccc; border-radius: 5px;">
+                        <option value="" disabled selected>Select a class type</option>
+                        <option value="yoga">Yoga</option>
+                        <option value="pilates">Pilates</option>
+                        <option value="high-intensity">High Intensity</option>
+                    </select>
+                </div>
+                <div style="flex: 1; min-width: 200px;">
+                    <label for="filter-instructor" style="font-size: 18px; font-family: Inter, sans-serif; font-weight: 600; color: #333;">Instructor</label>
+                    <select id="filter-instructor" name="filter-instructor" style="width: 100%; padding: 10px; font-size: 16px; font-family: Inter, sans-serif; border: 1px solid #ccc; border-radius: 5px;">
+                        <option value="" disabled selected>Select an instructor</option>
+                        <option value="alex">Alex Ward</option>
+                        <option value="amber">Amber Mcgoogan</option>
+                        <option value="cheryl">Cheryl Heard</option>
+                    </select>
+                </div>
+                <div style="flex: 1; min-width: 200px;">
+                    <label for="filter-time" style="font-size: 18px; font-family: Inter, sans-serif; font-weight: 600; color: #333;">Time</label>
+                    <select id="filter-time" name="filter-time" style="width: 100%; padding: 10px; font-size: 16px; font-family: Inter, sans-serif; border: 1px solid #ccc; border-radius: 5px;">
+                        <option value="" disabled selected>Select a time</option>
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="evening">Evening</option>
+                    </select>
+                </div>
+                <div style="flex: 1; min-width: 200px; align-self: flex-end;">
+                    <button type="button" style="width: 100%; padding: 10px; font-size: 16px; font-family: Inter, sans-serif; font-weight: 700; color: white; background: #5B30AF; border: none; border-radius: 5px; cursor: pointer;">Apply Filters</button>
+                </div>
+            </form>
+        </div>
+
         <form class="booking-form">
             <label for="name">Full Name</label>
             <input type="text" id="name" name="name" placeholder="Enter your full name" required />
