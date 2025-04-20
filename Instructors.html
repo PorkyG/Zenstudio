@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -44,12 +44,6 @@
             position: relative;
             padding: 0 20px;
         }
-        .logo {
-            position: absolute;
-            left: 20px;
-            top: -2px;
-            z-index: 1;
-        }
         .landing-container {
             width: 100vw;
             height: 600px;
@@ -77,106 +71,15 @@
             z-index: 1;
             opacity: 0.9;
         }
-        .nav-item a:hover div:first-child {
-            transform: scale(1.1);
-            transition: transform 0.3s ease-in-out;
-        }
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: #91D6D6;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            z-index: 10;
-        }
-
-        .dropdown-menu a {
-            display: block;
-            padding: 10px 20px;
-            color: black;
-            text-decoration: none;
-            font-family: Inter;
-            font-size: 16px;
-            font-weight: 500;
-        }
-
-        .dropdown-menu a:hover {
-            background: #5B30AF;
-            color: white;
-        }
-
-        .nav-item:hover .dropdown-menu {
-            display: block;
-        }
-        .footer-logo img:hover {
-            transform: scale(1.1);
-            transition: transform 0.3s ease-in-out;
-        }
-        .social-icons img {
-            mix-blend-mode: multiply;
-            transition: transform 0.3s ease-in-out, mix-blend-mode 0.3s ease-in-out;
-        }
-        .social-icons img:hover {
-            transform: scale(1.1);
-            mix-blend-mode: screen;
-        }
-        .logo img:hover {
-            transform: scale(1.1);
-            transition: transform 0.3s ease-in-out;
-        }
-        .nav-item div:hover {
-            transform: scale(1.1);
-            transition: transform 0.3s ease-in-out;
-        }
-        .nav-item div:first-child:hover {
-            transform: scale(1.1);
-            transition: transform 0.3s ease-in-out;
-        }
-        .membership-section a div:first-child:hover {
-            transform: scale(1.1);
-            transition: transform 0.3s ease-in-out;
-        }
-        .footer {
-            width: 100%;
-            background: #91D6D6;
-            padding: 40px 0;
-            margin-top: 0;
-            position: relative;
-            bottom: 0;
-            left: 0;
-        }
-        .footer-content {
-            max-width: 1440px;
-            margin: 0 auto;
-            padding: 0 20px;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .footer-nav {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        .social-icons {
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-            display: flex;
-            gap: 10px;
-        }
     </style>
 </head>
 <body>
+    
     <div class="header-container">
         <div class="header-content">
-            <div class="logo">
+            <div style="width: 121px; height: 144px; left: 20px; top: -2px; position: absolute">
                 <a href="./index.html" style="text-decoration: none;">
-                    <img style="width: 121px; height: 144px; border-radius: 200px;" src="./public/images/rectangle-2.png" alt="ZenStudio Logo" />
+                    <img style="width: 121px; height: 144px; position: absolute; border-radius: 200px" src="./public/images/rectangle-2.png" alt="ZenStudio Logo" />
                 </a>
             </div>
             <div class="nav-wrapper">
@@ -185,10 +88,6 @@
                         <div style="width: 100%; height: 100%; background: #91D6D6; border-radius: 50px; outline: 2px black solid"></div>
                         <div style="position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 20px; font-family: Inter; font-weight: 700;">Membership</div>
                     </a>
-                    <div class="dropdown-menu">
-                        <a href="./membership.html">Membership Plans</a>
-                        <a href="./account.html">Account Access</a>
-                    </div>
                 </div>
                 <div class="nav-item">
                     <a href="./Instructors.html" style="text-decoration: none;">
@@ -201,12 +100,6 @@
                         <div style="width: 100%; height: 100%; background: #91D6D6; border-radius: 50px; outline: 2px black solid"></div>
                         <div style="position: absolute; width: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); color: black; font-size: 20px; font-family: Inter; font-weight: 700;">Classes</div>
                     </a>
-                    <div class="dropdown-menu">
-                        <a href="./classes.html#yoga">Yoga</a>
-                        <a href="./classes.html#pilates">Pilates</a>
-                        <a href="./classes.html#high-intensity">High Intensity</a>
-                        <a href="./bookings.html">Booking</a>
-                    </div>
                 </div>
                 <div class="nav-item">
                     <a href="./sign up.html" style="text-decoration: none;">
@@ -227,11 +120,11 @@
     <div class="landing-container">
         <img class="landing-background" src="./public/images/Meet.jpg" alt="Meet Our Trainers" />
         <div class="landing-content">
-            <div style="position: absolute; left: 30px; top: 172px; color: #FFF9F9; font-size: 48px; font-family: Inter; font-weight: 900; word-wrap: break-word; max-width: 833px; z-index: 2; line-height: 1.5;">
-                Meet Our Expert Trainers
+            <div style="position: absolute; left: 30px; top: 172px; color: #FFF9F9; font-size: 30px; font-family: Inter; font-weight: 800; word-wrap: break-word; max-width: 833px; z-index: 2;">
+                Meet Our Expert Trainers<br/>
             </div>
-            <div style="position: absolute; left: 30px; top: 260px; color: #FFF9F9; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word; max-width: 800px; z-index: 2; line-height: 1.8;">
-                Our team is a crew of inspiring individuals that were hand-picked to lead you through your fitness journey at ZenStudio. Fun fact – over 80% of our staff began as clients before becoming instructors and have been part of the Zen experience since the very beginning of their home studio. ZenStudio instructors are trained in-house, and most hold certifications and licenses to expand their depth and knowledge, providing safe, comprehensive fitness programming for a full mind and body experience.
+            <div style="position: absolute; left: 30px; top: 240px; color: #FFF9F9; font-size: 20px; font-family: Inter; font-weight: 500; word-wrap: break-word; max-width: 800px; z-index: 2;">
+                Our team is a crew of inspiring individuals that were hand picked to lead you through your fitness journey at zenstudio. fun fact – 80%+ of our staff began as clients prior to becoming instructors and/or have been a part of the zen-experince since the very beginning of their home studio. zenstudio instructors are trained in-house and most hold certifications and licenses to expand their depth and knowledge, providing safe, comprehensive fitness programming for a full mind and body experience.
             </div>
         </div>
     </div>
@@ -262,82 +155,16 @@
             <div style="left: 0px; top: 0px; position: absolute; color: black; font-size: 40px; font-family: Inter; font-weight: 800; word-wrap: break-word">Our Community in Action</div>
             
             <!-- First Row -->
-            <img style="width: 210px; height: 202px; left: 3px; top: 132px; position: absolute; border-radius: 150px; border: 1px black solid" src="./public/images/Trainer1.jpg" alt="Trainer 1" />
-            <img style="width: 210px; height: 202px; left: 362px; top: 132px; position: absolute; border-radius: 150px; border: 1px black solid" src="./public/images/Trainer2.jpg" alt="Trainer 2" />
-            <img style="width: 210px; height: 202px; left: 721px; top: 132px; position: absolute; border-radius: 150px; border: 1px black solid" src="./public/images/Trainer3.jpg" alt="Trainer 3" />
-            <img style="width: 210px; height: 202px; left: 1080px; top: 132px; position: absolute; border-radius: 150px; border: 1px black solid" src="./public/images/Trainer4.jpg" alt="Trainer 4" />
+            <img style="width: 210px; height: 202px; left: 3px; top: 132px; position: absolute; border-radius: 150px; border: 1px black solid" src="./public/images/Trainer1.jpg" />
+            <img style="width: 210px; height: 202px; left: 362px; top: 132px; position: absolute; border-radius: 150px; border: 1px black solid" src="./public/images/Trainer2.jpg" />
+            <img style="width: 210px; height: 202px; left: 721px; top: 132px; position: absolute; border-radius: 150px; border: 1px black solid" src="./public/images/Trainer3.jpg" />
+            <img style="width: 210px; height: 202px; left: 1080px; top: 132px; position: absolute; border-radius: 150px; border: 1px black solid" src="./public/images/Trainer4.jpg" />
             
             <!-- Second Row -->
             <img style="width: 210px; height: 202px; left: 3px; top: 484px; position: absolute; border-radius: 150px; border: 1px black solid" src="./public/images/Trainer5.jpg" />
             <img style="width: 210px; height: 202px; left: 362px; top: 484px; position: absolute; border-radius: 150px; border: 1px black solid" src="./public/images/Trainer6.jpg" />
             <img style="width: 210px; height: 202px; left: 721px; top: 484px; position: absolute; border-radius: 150px; border: 1px black solid" src="./public/images/Trainer7.jpg" />
             <img style="width: 210px; height: 202px; left: 1080px; top: 484px; position: absolute; border-radius: 150px; border: 1px black solid" src="./public/images/Trainer8.jpg" />
-        </div>
-    </div>
-
-    <div style="width: 100vw; position: relative; background: #91D6D6; overflow: hidden; padding: 60px 0;">
-        <div style="max-width: 1440px; width: 100%; margin: 0 auto; position: relative; min-height: 750px;">
-            <div style="color: black; font-size: 40px; font-family: Inter; font-weight: 800; margin-bottom: 20px; text-align: center;">
-                Member Dashboard
-            </div>
-            <div style="display: flex; flex-direction: column; align-items: center; gap: 40px;">
-                <!-- Schedule Section -->
-                <div style="width: 80%; background: white; border-radius: 10px; padding: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                    <h3 style="color: #5B30AF; font-family: Inter; font-weight: 700; font-size: 24px; margin-bottom: 10px;">Your Schedule</h3>
-                    <ul style="list-style: none; padding: 0; font-family: Inter; font-size: 18px; color: black;">
-                        <li>Monday: Yoga at 6 PM</li>
-                        <li>Wednesday: Pilates at 7 PM</li>
-                        <li>Friday: Strength Training at 5 PM</li>
-                    </ul>
-                </div>
-                <!-- Progress Tracking Section -->
-                <div style="width: 80%; background: white; border-radius: 10px; padding: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                    <h3 style="color: #5B30AF; font-family: Inter; font-weight: 700; font-size: 24px; margin-bottom: 10px;">Track Your Progress</h3>
-                    <p style="font-family: Inter; font-size: 18px; color: black;">
-                        View your fitness milestones and achievements here. Stay motivated by tracking your progress over time.
-                    </p>
-                </div>
-                <!-- Class Recommendations Section -->
-                <div style="width: 80%; background: white; border-radius: 10px; padding: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-                    <h3 style="color: #5B30AF; font-family: Inter; font-weight: 700; font-size: 24px; margin-bottom: 10px;">Tailored Class Recommendations</h3>
-                    <ul style="list-style: none; padding: 0; font-family: Inter; font-size: 18px; color: black;">
-                        <li>Yoga for Beginners</li>
-                        <li>High-Intensity Interval Training</li>
-                        <li>Pilates Core Strength</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div style="width: 100vw; position: relative; background: #FFF9F9; overflow: hidden; padding: 60px 0;">
-        <div style="max-width: 1440px; width: 100%; margin: 0 auto; position: relative;">
-            <div style="color: black; font-size: 40px; font-family: Inter; font-weight: 800; margin-bottom: 40px; text-align: center;">
-                Meet Our Instructors
-            </div>
-            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
-                <!-- Instructor 1 -->
-                <div style="width: 300px; background: white; border-radius: 10px; padding: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
-                    <img src="./public/images/Sophia.jpg" alt="Sophia Carter" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 20px;">
-                    <h3 style="color: #5B30AF; font-family: Inter; font-weight: 700; font-size: 20px;">Sophia Carter</h3>
-                    <p style="font-family: Inter; font-size: 16px; color: black; margin-bottom: 10px;">Strength Coach</p>
-                    <p style="font-family: Inter; font-size: 14px; color: black;">"I love helping clients build resilience and power through strength training."</p>
-                </div>
-                <!-- Instructor 2 -->
-                <div style="width: 300px; background: white; border-radius: 10px; padding: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
-                    <img src="./public/images/james.jpg" alt="James Lee" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 20px;">
-                    <h3 style="color: #5B30AF; font-family: Inter; font-weight: 700; font-size: 20px;">James Lee</h3>
-                    <p style="font-family: Inter; font-size: 16px; color: black; margin-bottom: 10px;">Yoga Instructor</p>
-                    <p style="font-family: Inter; font-size: 14px; color: black;">"Bringing calm and balance to your routine with yoga and mindfulness."</p>
-                </div>
-                <!-- Instructor 3 -->
-                <div style="width: 300px; background: white; border-radius: 10px; padding: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
-                    <img src="./public/images/Olivia.jpg" alt="Olivia Brown" style="width: 150px; height: 150px; border-radius: 50%; margin-bottom: 20px;">
-                    <h3 style="color: #5B30AF; font-family: Inter; font-weight: 700; font-size: 20px;">Olivia Brown</h3>
-                    <p style="font-family: Inter; font-size: 16px; color: black; margin-bottom: 10px;">Nutritionist</p>
-                    <p style="font-family: Inter; font-size: 14px; color: black;">"Guiding clients towards healthier eating habits to complement their fitness journey."</p>
-                </div>
-            </div>
         </div>
     </div>
 
@@ -361,22 +188,20 @@
     </div>
 
     <!-- Social Media Icons -->
-    <div class="social-icons">
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-            <img src="./public/images/Facebook.jpg" alt="Facebook" style="width: 48px; height: 48px; object-fit: contain;" />
-        </a>
-        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-            <img src="./public/images/X.jpg" alt="Twitter" style="width: 48px; height: 48px; object-fit: contain;" />
-        </a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-            <img src="./public/images/Instagram.jpg" alt="Instagram" style="width: 48px; height: 48px; object-fit: contain;" />
-        </a>
-        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
-            <img src="./public/images/Youtube.jpg" alt="YouTube" style="width: 48px; height: 48px; object-fit: contain;" />
-        </a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-            <img src="./public/images/Linkedin.jpg" alt="LinkedIn" style="width: 48px; height: 48px; object-fit: contain;" />
-        </a>
+    <div data-size="48" style="width: 48px; height: 48px; left: 1122px; top: 341px; position: absolute; overflow: hidden">
+        <img src="./public/images/Facebook.jpg" alt="Facebook" style="width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply" />
+    </div>
+    <div data-size="48" style="width: 48px; height: 48px; left: 1182px; top: 341px; position: absolute; overflow: hidden">
+        <img src="./public/images/X.jpg" alt="X" style="width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply" />
+    </div>
+    <div data-size="48" style="width: 48px; height: 48px; left: 1242px; top: 341px; position: absolute; overflow: hidden">
+        <img src="./public/images/Instagram.jpg" alt="Instagram" style="width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply" />
+    </div>
+    <div data-size="48" style="width: 48px; height: 48px; left: 1302px; top: 341px; position: absolute; overflow: hidden">
+        <img src="./public/images/Youtube.jpg" alt="Youtube" style="width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply" />
+    </div>
+    <div data-size="48" style="width: 48px; height: 48px; left: 1362px; top: 341px; position: absolute; overflow: hidden">
+        <img src="./public/images/Linkedin.jpg" alt="LinkedIn" style="width: 100%; height: 100%; object-fit: contain; mix-blend-mode: multiply" />
     </div>
 
     <!-- Country/Language Section -->
@@ -385,7 +210,7 @@
     <div style="width: 268px; height: 146.37px; left: 36px; top: 269.01px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">copyright|All rights reserved<br/>Privacy policy<br/>Terms & Conditions<br/>Google API Disclosure</div>
 
     <!-- Footer Logo -->
-    <a href="./index.html" style="text-decoration: none;" class="footer-logo">
+    <a href="./index.html" style="text-decoration: none;">
         <img style="width: 238px; height: 210px; left: 561px; top: 161px; position: absolute; border-radius: 150px; border: 2px black solid" src="./public/images/Logo.jpg" alt="ZenStudio Footer Logo" />
     </a>
 </div>
