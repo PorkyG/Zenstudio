@@ -264,6 +264,157 @@
             transform: scale(1.1);
             transition: transform 0.3s ease-in-out;
         }
+
+        /* Mobile Responsiveness */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .header-container {
+                padding: 10px 0;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+            
+            .nav-wrapper {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                padding: 20px 10px;
+                max-width: 100%;
+            }
+            
+            .nav-item {
+                width: 100px;
+                height: 45px;
+            }
+            
+            .nav-item div:last-child {
+                font-size: 14px !important;
+            }
+            
+            .landing-container {
+                min-height: 400px;
+            }
+            
+            .landing-background {
+                height: 400px;
+                object-fit: cover;
+            }
+            
+            .landing-content {
+                padding: 40px 20px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                min-height: 400px;
+            }
+            
+            .tailored-container {
+                padding: 40px 20px;
+                height: auto;
+            }
+            
+            .tailored-content {
+                padding: 0 10px;
+            }
+            
+            .wellness-container {
+                padding: 40px 20px;
+                margin-left: calc(-50vw + 50%);
+                margin-right: calc(-50vw + 50%);
+            }
+            
+            .wellness-content {
+                padding: 20px 10px;
+                min-height: auto;
+            }
+            
+            .schedule-container {
+                padding: 40px 20px;
+                margin-left: calc(-50vw + 50%);
+                margin-right: calc(-50vw + 50%);
+            }
+            
+            /* Make all absolutely positioned elements relative on mobile */
+            .tailored-content > div[style*="position: absolute"],
+            .wellness-content > div[style*="position: absolute"],
+            .schedule-content > div[style*="position: absolute"] {
+                position: relative !important;
+                left: auto !important;
+                top: auto !important;
+                margin: 20px auto !important;
+                display: block !important;
+                text-align: center !important;
+                max-width: 300px !important;
+                height: auto !important;
+                width: auto !important;
+            }
+            
+            /* Footer responsive */
+            .footer {
+                padding: 30px 15px;
+            }
+            
+            .footer-content {
+                padding: 0 15px;
+            }
+            
+            .social-icons {
+                position: relative !important;
+                bottom: auto !important;
+                right: auto !important;
+                justify-content: center;
+                margin-top: 20px;
+                display: flex;
+                gap: 10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .nav-wrapper {
+                gap: 8px;
+                padding: 15px 5px;
+            }
+            
+            .nav-item {
+                width: 90px;
+                height: 40px;
+            }
+            
+            .nav-item div:last-child {
+                font-size: 12px !important;
+            }
+            
+            .landing-background {
+                height: 300px;
+            }
+            
+            .landing-container {
+                min-height: 300px;
+            }
+            
+            .landing-content {
+                min-height: 300px;
+                padding: 20px 15px;
+            }
+            
+            .tailored-container {
+                padding: 20px 10px;
+            }
+            
+            .wellness-content {
+                padding: 15px 5px;
+            }
+        }
     </style>
 </head>
 <body>

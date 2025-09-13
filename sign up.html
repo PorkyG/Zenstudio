@@ -160,6 +160,111 @@
             transform: scale(1.1);
             transition: transform 0.3s ease-in-out;
         }
+
+        /* Mobile Responsiveness */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .header-container {
+                padding: 10px 0;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+            
+            .nav-wrapper {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                padding: 20px 10px;
+                max-width: 100%;
+            }
+            
+            .nav-item {
+                width: 100px;
+                height: 45px;
+            }
+            
+            .nav-item div:last-child {
+                font-size: 14px !important;
+            }
+            
+            .landing-container {
+                min-height: 400px;
+            }
+            
+            .landing-background {
+                height: 400px;
+                object-fit: cover;
+            }
+            
+            .landing-content {
+                padding: 40px 20px;
+                text-align: center;
+            }
+            
+            .landing-content span {
+                font-size: 36px !important;
+                line-height: 1.2;
+            }
+            
+            .landing-content span:last-child {
+                font-size: 24px !important;
+                margin-top: 20px;
+            }
+            
+            /* Footer responsive */
+            .footer {
+                padding: 30px 15px;
+            }
+            
+            .social-icons {
+                position: relative !important;
+                bottom: auto !important;
+                right: auto !important;
+                justify-content: center;
+                margin-top: 20px;
+                display: flex;
+                gap: 10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .nav-wrapper {
+                gap: 8px;
+                padding: 15px 5px;
+            }
+            
+            .nav-item {
+                width: 90px;
+                height: 40px;
+            }
+            
+            .nav-item div:last-child {
+                font-size: 12px !important;
+            }
+            
+            .landing-content span {
+                font-size: 28px !important;
+            }
+            
+            .landing-content span:last-child {
+                font-size: 20px !important;
+            }
+            
+            .landing-background {
+                height: 300px;
+            }
+            
+            .landing-container {
+                min-height: 300px;
+            }
+        }
     </style>
 </head>
 <body>
